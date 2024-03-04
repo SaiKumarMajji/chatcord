@@ -4,7 +4,7 @@ function formatMessage(username, text) {
   return {
     username,
     text,
-      time: new Date().toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata' }),
+      time: new Date().toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata', hour12: true, hour: 'numeric', minute: '2-digit' }),
   };
 }
 
